@@ -1,0 +1,5 @@
+mmls dds2-alpine.flag.img
+
+fls -o 2048 -r -p dds2-alpine.flag.img | grep "down-at-the-bottom.txt"  
+
+icat -o 2048 dds2-alpine.flag.img 18291 > down-at-the-bottom.txt
