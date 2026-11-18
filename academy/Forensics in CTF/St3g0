@@ -1,0 +1,3 @@
+Install zsteg: sudo gem install zsteg
+
+zsteg academy.flag.png
