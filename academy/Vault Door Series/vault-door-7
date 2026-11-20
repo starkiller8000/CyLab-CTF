@@ -1,0 +1,10 @@
+array=[1096770097,1952395366,1600270708,1601398833,1716808014,1734293602,895574369,909534257]
+chars = []
+for val in array:
+    chars.append(chr((val >> 24) & 0xFF))
+    chars.append(chr((val >> 16) & 0xFF))
+    chars.append(chr((val >> 8) & 0xFF))
+    chars.append(chr(val & 0xFF))
+
+result = "".join(chars)
+print(result)
