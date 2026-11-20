@@ -8,3 +8,27 @@ for val in array:
 
 result = "".join(chars)
 print(result)
+
+/*
+Giả sử phần tử đầu tiên trong mảng của bạn là val = 1096770097 (ở dạng hex 32-bit là 0x415f6231):
+
+val >> 24 (Dịch bit sang phải 24 vị trí):
+
+Đẩy 24 bit thấp (5f6231) ra khỏi phạm vi 8 bit cuối và kéo 8 bit cao nhất (41) xuống vị trí 8 bit thấp nhất.
+
+Kết quả: 0x41 (hệ thập phân là 65).
+
+& 0xFF (Mặt nạ bit giữ lại đúng 1 byte / 8 bit cuối):
+
+0xFF ở hệ nhị phân là 11111111 (8 bit 1).
+
+Phép AND bit & 0xFF đảm bảo chỉ lấy đúng 8 bit thấp nhất (giá trị nằm trong khoảng 0 đến 255), loại bỏ mọi bit dư thừa phía trước nếu có.
+
+Kết quả vẫn là 0x41 (65).
+
+chr(...) (Đổi mã số sang ký tự):
+
+Chuyển số nguyên 65 thành ký tự tương ứng trong bảng mã ASCII/Unicode.
+
+65 (0x41) chính là ký tự 'A'.
+*/
