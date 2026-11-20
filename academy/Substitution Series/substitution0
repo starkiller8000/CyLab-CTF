@@ -1,0 +1,13 @@
+sub="KCXZUNDAOYVRHWLGFSIMQPTEBJ"
+alph="ABCDEFGHIJKLMNOPQRSYUVWXYZ"
+dictionary ={}
+for i in range (0,len(sub)):
+	dictionary[sub[i]] = alph[i]
+flag="{5QC5717Q710W_3P0RQ710W_1ZZN0Z6X}"
+result=""
+for i in flag:
+	if i in sub:
+		result += dictionary[i]
+	else:
+		result += i
+print(result)	
